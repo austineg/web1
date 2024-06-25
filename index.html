@@ -2,63 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page desgin website</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c9569f2ad2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="form-box">
-        <h1 id="title">sign up</h1>
-        <form>
-        <div class="input-group">
-
-              <div class="input-field" id="nameField">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" placeholder="Name">
-           </div>
-
-           <div class="input-field">
-            <i class="fa-solid fa-envelope"></i>
-            <input type="email" placeholder="Email">
-       </div>
-
-       <div class="input-field">
-        <i class="fa-solid fa-lock"></i>
-        <input type="password" placeholder="Password">
-   </div>
-      <p>Lost password <a href="#">Click here!</a></p>     
+    <div class="hero">
+        <div class="navbar">
+            <img src="/images/logo1.png" class="logo">
+        <button type="button">Sign Up</button>
         </div>
-        <div class="btn-field">
-            <button type="button" id="signupBtn">Sign up</button>
-            <button type="button" id="signinBtn" class="disable">Sign in</button>
+        <div class="content">
+            <small>Welcome to our</small>
+            <h1>World's<br>Creative Studio</h1>
+            <button type="button">Take a tour</button>
         </div>
-    </form>
+        <div class="side-bar">
+            <img scr="/images/menu.jpeg" class="menu">
+
+            <div class="social-links">
+                <img scr="/images/fb.jpeg">
+                <img scr="/images/ig.jpeg">
+                <img scr="/images/tw.jpeg">
+            </div>
+
+            <div class="useful-links">
+                <img scr="images/share.png">
+                <img scr="images/info.png">
+            </div>
         </div>
-    </div>
 
-    <script>
+         <div class="bubbles"> 
+             <img src="/images/bubble.png"> 
+             <img src="/images/bubble.png"> 
+             <img src="/images/bubble.png"> 
+             <img src="/images/bubble.png"> 
+             <img src="/images/bubble.png"> 
+             <img src="/images/bubble.png"> 
+        </div> 
 
-  let signupBtn = document.getElementById("signupBtn");
-  let signinBtn = document.getElementById("signinBtn");
-  let nameField = document.getElementById("nameField");
-  let title = document.getElementById("title");
-
-  signinBtn.onclick = function(){
-    nameField.style.maxHeight = "0";
-    title.innerHTML = "sign in";
-    signinBtn.classList.remove("disable");
-    signupBtn.classList.add("disable");
-  }
-
-  signupBtn.onclick = function(){
-    nameField.style.maxHeight = "60px";
-    title.innerHTML = "sign up";
-    signinBtn.classList.add("disable");
-    signupBtn.classList.remove("disable");
-  }
-
-    </script>
+    </div> 
 </body>
 </html>
