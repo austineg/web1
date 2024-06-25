@@ -1,0 +1,106 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}.container{
+    height: 585px;
+    width: 1280px;
+    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)), url(photo1.jpeg);
+    background-size: 1280px 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.form-box{
+     width: 90%;
+     max-width: 450px;
+     position: absolute; 
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     /* background:  #fff; */
+     padding:  50px 60px 70px;
+     text-align:  center; 
+}
+.form-box h1{
+    font-size:  30px;
+    margin-bottom:  60px;
+    color: #3c00a0;
+    position:  relative;
+}
+.form-box h1::after{
+    content: '';
+    width:  30px;
+    height:  5px;
+    border-radius: 3px;
+    background:  #3c00a0;
+    position:  absolute;  
+    bottom:  -10px;
+    /* left:  50%; */
+    transform:  translateX(-200%); 
+}
+.input-field{
+    background:  #eaeaea;
+    margin:  10px; 
+    border-radius:  8px; 
+    display:  flex;   
+    align-items: center; 
+    max-height: 50px;
+    transition: max-height 0.6s;
+    overflow: hidden;
+}
+  input{   
+    width:  100%;
+    background:  transparent; 
+    border: 0;
+    padding:  38px 15px;  
+    margin-left: -5px;
+     }   
+   .input-field {  
+    display: flex;
+    align-items: center;
+    transform: translateY(10%);
+  }  
+  .input-field i{ 
+    margin-left: 15px;
+    color:#999;
+  } 
+ form p{
+    text-align:  left;
+    font-size:  13px;
+    margin-left: 10px;
+}
+form p a{
+    text-decoration: none;
+    color: #3c00a0;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+.btn-field button{
+    flex-basis: 48%;
+    background: rgb(173, 103, 103);
+    color: #fff;
+    height: 30px;
+    border-radius: 20px;
+    border: none; 
+    /* outline: 0; */
+    cursor: pointer;
+    transition: background 1s;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    /* background-color: rgb(48, 107, 162); */
+    margin-bottom: 5px;
+    }
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+p{
+    margin: 10px;
+}
